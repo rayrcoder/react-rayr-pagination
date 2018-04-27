@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-class RayrPage extends React.Component {
+class RayrPagination extends React.Component {
 
     static propTypes = {
         count: PropTypes.number.isRequired,
@@ -132,4 +132,4 @@ class RayrPage extends React.Component {
     }
 }
 
-export default RayrPage;
+export default RayrPagination;

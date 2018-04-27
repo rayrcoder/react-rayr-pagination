@@ -5,7 +5,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;2.can change the counts that each page show
 
 ### Install
-    npm install react-rayr-page --save
+    npm install react-rayr-pagination --save
 
 ### Params
 | param | type | descript | default | 
@@ -16,9 +16,9 @@
 | onChange | Function | callback, the param is the page which you have clicked| 
 ### Use Demo
  ```javascript
- import {RayrPage} from 'react-rayr-page';
+ import {RayrPagination} from 'react-rayr-pagination';
 
-<RayrPage count={this.state.count}
+<RayrPagination count={this.state.count}
     currentPage={this.state.currentPage}
     perPage={this.state.perPage}
     onChange={(page) => {
