@@ -1,0 +1,82 @@
+
+.rayr-page-div{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+    .rayr-page {
+        // position: absolute;
+        flex:none;
+        right: 0;
+        display: flex;
+        li,.input-go{
+            flex:none; 
+            display: flex;
+            border:1px solid #dbdbdb;
+            margin:0.2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 0.65rem;
+            cursor: pointer;
+            color:#757575;
+            border-radius: 2px;
+            span{
+                text-align: center;
+                margin: auto;  
+            }
+            .start-end{
+                color:#ccc;
+            }
+            &:hover{
+                background-color: #ededed;
+            }
+            
+        }
+        .input-go{
+            width: 1.4rem;
+            height: 1.4rem;
+            text-indent: 0.25rem;
+            cursor:auto;
+            &:focus{
+                outline: none;
+                border: 1px solid #5797FB;
+            }
+            &:hover{
+                background-color: #ffffff;
+            }
+        }
+        .li-go-width{
+            width: 2.5rem;
+            border:0px;
+            cursor: default;
+            &:hover{
+                background-color: #ffffff;
+            }
+        }
+        .li-page-width{
+            width: 1.5rem;
+            border:0px;
+            cursor: default;
+            &:hover{
+                background-color: #ffffff;
+            }
+        }
+        .value-blue{
+            background-color:#5797FB;
+            color:white;
+            font-weight: 400;
+            &:hover{
+                opacity: 0.88;
+                background-color:#5797FB;
+            }
+        }
+        .click-disable{
+            cursor:not-allowed;
+            background-color: #ededed;
+            opacity: 0.5;
+        }
+    }
+}
+
+.div-test{
+    border:solid 1px #dbdbdb;
+}

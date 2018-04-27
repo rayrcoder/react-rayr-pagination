@@ -1,0 +1,94 @@
+.rayr-page-div {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.rayr-page-div .rayr-page {
+  flex: none;
+  right: 0;
+  display: flex;
+}
+
+.rayr-page-div .rayr-page li, .rayr-page-div .rayr-page .input-go {
+  flex: none;
+  display: flex;
+  border: 1px solid #dbdbdb;
+  margin: 0.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: #757575;
+  border-radius: 2px;
+}
+
+.rayr-page-div .rayr-page li span, .rayr-page-div .rayr-page .input-go span {
+  text-align: center;
+  margin: auto;
+}
+
+.rayr-page-div .rayr-page li .start-end, .rayr-page-div .rayr-page .input-go .start-end {
+  color: #ccc;
+}
+
+.rayr-page-div .rayr-page li:hover, .rayr-page-div .rayr-page .input-go:hover {
+  background-color: #ededed;
+}
+
+.rayr-page-div .rayr-page .input-go {
+  width: 1.4rem;
+  height: 1.4rem;
+  text-indent: 0.25rem;
+  cursor: auto;
+}
+
+.rayr-page-div .rayr-page .input-go:focus {
+  outline: none;
+  border: 1px solid #5797FB;
+}
+
+.rayr-page-div .rayr-page .input-go:hover {
+  background-color: #ffffff;
+}
+
+.rayr-page-div .rayr-page .li-go-width {
+  width: 2.5rem;
+  border: 0px;
+  cursor: default;
+}
+
+.rayr-page-div .rayr-page .li-go-width:hover {
+  background-color: #ffffff;
+}
+
+.rayr-page-div .rayr-page .li-page-width {
+  width: 1.5rem;
+  border: 0px;
+  cursor: default;
+}
+
+.rayr-page-div .rayr-page .li-page-width:hover {
+  background-color: #ffffff;
+}
+
+.rayr-page-div .rayr-page .value-blue {
+  background-color: #5797FB;
+  color: white;
+  font-weight: 400;
+}
+
+.rayr-page-div .rayr-page .value-blue:hover {
+  opacity: 0.88;
+  background-color: #5797FB;
+}
+
+.rayr-page-div .rayr-page .click-disable {
+  cursor: not-allowed;
+  background-color: #ededed;
+  opacity: 0.5;
+}
+
+.div-test {
+  border: solid 1px #dbdbdb;
+}
