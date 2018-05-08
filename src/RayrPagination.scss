@@ -4,24 +4,25 @@
     justify-content: flex-end;
     flex:1;
     .rayr-page {
-        // position: absolute;
         flex:none;
         right: 0;
         display: flex;
+        // font-size: 13px;
         li,.input-go{
             flex:none; 
             display: flex;
             border:1px solid #dbdbdb;
-            margin:0.2rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            font-size: 0.65rem;
+            margin:4px;
+            min-width: 30px;
+            height: 30px;
+            font-size: 13px;
             cursor: pointer;
             color:#757575;
             border-radius: 2px;
             span{
                 text-align: center;
                 margin: auto;  
+                padding:0 4px;
             }
             .start-end{
                 color:#ccc;
@@ -32,9 +33,10 @@
             
         }
         .input-go{
-            width: 1.4rem;
-            height: 1.4rem;
-            text-indent: 0.25rem;
+            // width: 1.4rem;
+            height: 28px;
+            // text-indent: 0.25rem;
+            text-align: center;
             cursor:auto;
             &:focus{
                 outline: none;
@@ -43,9 +45,12 @@
             &:hover{
                 background-color: #ffffff;
             }
+            &::placeholder{
+                color:#ccc;
+            }
         }
         .li-go-width{
-            width: 2.5rem;
+            // width: 50px;
             border:0px;
             cursor: default;
             &:hover{
@@ -53,9 +58,10 @@
             }
         }
         .li-page-width{
-            width: 1.5rem;
+            width: 30px;
             border:0px;
             cursor: default;
+            margin-left: 0;
             &:hover{
                 background-color: #ffffff;
             }
@@ -73,6 +79,26 @@
             cursor:not-allowed;
             background-color: #ededed;
             opacity: 0.5;
+        }
+    }
+    .lg-rayr-page{
+        li,.input-go{
+            min-width: 34px;
+            height: 34px;
+            font-size: 14px;     
+        }
+        .input-go{
+            height: 32px;
+        }
+    }
+    .sm-rayr-page{
+        li,.input-go{
+            min-width: 24px;
+            height: 24px;
+            font-size: 12px;     
+        }
+        .input-go{
+            height: 22px;
         }
     }
 }
