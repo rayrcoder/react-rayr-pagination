@@ -34,7 +34,6 @@
 }
 
 .rayr-page-container .rayr-page .input-go {
-  height: 28px;
   text-align: center;
   cursor: auto;
 }
@@ -95,16 +94,8 @@
   font-size: 14px;
 }
 
-.rayr-page-container .lg-rayr-page .input-go {
-  height: 32px;
-}
-
 .rayr-page-container .sm-rayr-page li, .rayr-page-container .sm-rayr-page .input-go {
   min-width: 24px;
   height: 24px;
   font-size: 12px;
-}
-
-.rayr-page-container .sm-rayr-page .input-go {
-  height: 22px;
 }
