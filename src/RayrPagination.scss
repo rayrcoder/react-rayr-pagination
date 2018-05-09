@@ -1,5 +1,8 @@
+$primary: #5797FB;
+$default-hover: #ededed;
+$border-color:#dbdbdb;
 
-.rayr-page-div{
+.rayr-page-container{
     display: flex;
     justify-content: flex-end;
     flex:1;
@@ -11,7 +14,7 @@
         li,.input-go{
             flex:none; 
             display: flex;
-            border:1px solid #dbdbdb;
+            border:1px solid $border-color;
             margin:4px;
             min-width: 30px;
             height: 30px;
@@ -24,40 +27,35 @@
                 margin: auto;  
                 padding:0 4px;
             }
-            .start-end{
-                color:#ccc;
-            }
             &:hover{
-                background-color: #ededed;
+                background-color: $default-hover;
             }
             
         }
         .input-go{
-            // width: 1.4rem;
             height: 28px;
             // text-indent: 0.25rem;
             text-align: center;
             cursor:auto;
             &:focus{
                 outline: none;
-                border: 1px solid #5797FB;
+                border: 1px solid $primary;
             }
             &:hover{
                 background-color: #ffffff;
             }
             &::placeholder{
-                color:#ccc;
+                color:$border-color;
             }
         }
-        .li-go-width{
-            // width: 50px;
-            border:0px;
+        .li-go-text{
+            border: 0px;
             cursor: default;
             &:hover{
                 background-color: #ffffff;
             }
         }
-        .li-page-width{
+        .li-page-text{
             width: 30px;
             border:0px;
             cursor: default;
@@ -67,20 +65,22 @@
             }
         }
         .value-blue{
-            background-color:#5797FB;
+            background-color:$primary;
             color:white;
             font-weight: 400;
             &:hover{
                 opacity: 0.88;
-                background-color:#5797FB;
+                background-color:$primary;
             }
         }
         .click-disable{
             cursor:not-allowed;
-            background-color: #ededed;
+            background-color: $default-hover;
             opacity: 0.5;
         }
     }
+
+    //大尺寸
     .lg-rayr-page{
         li,.input-go{
             min-width: 34px;
@@ -91,6 +91,8 @@
             height: 32px;
         }
     }
+
+    //小尺寸
     .sm-rayr-page{
         li,.input-go{
             min-width: 24px;
@@ -101,8 +103,4 @@
             height: 22px;
         }
     }
-}
-
-.div-test{
-    border:solid 1px #dbdbdb;
 }

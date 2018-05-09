@@ -1,16 +1,16 @@
-.rayr-page-div {
+.rayr-page-container {
   display: flex;
   justify-content: flex-end;
   flex: 1;
 }
 
-.rayr-page-div .rayr-page {
+.rayr-page-container .rayr-page {
   flex: none;
   right: 0;
   display: flex;
 }
 
-.rayr-page-div .rayr-page li, .rayr-page-div .rayr-page .input-go {
+.rayr-page-container .rayr-page li, .rayr-page-container .rayr-page .input-go {
   flex: none;
   display: flex;
   border: 1px solid #dbdbdb;
@@ -23,96 +23,88 @@
   border-radius: 2px;
 }
 
-.rayr-page-div .rayr-page li span, .rayr-page-div .rayr-page .input-go span {
+.rayr-page-container .rayr-page li span, .rayr-page-container .rayr-page .input-go span {
   text-align: center;
   margin: auto;
   padding: 0 4px;
 }
 
-.rayr-page-div .rayr-page li .start-end, .rayr-page-div .rayr-page .input-go .start-end {
-  color: #ccc;
-}
-
-.rayr-page-div .rayr-page li:hover, .rayr-page-div .rayr-page .input-go:hover {
+.rayr-page-container .rayr-page li:hover, .rayr-page-container .rayr-page .input-go:hover {
   background-color: #ededed;
 }
 
-.rayr-page-div .rayr-page .input-go {
+.rayr-page-container .rayr-page .input-go {
   height: 28px;
   text-align: center;
   cursor: auto;
 }
 
-.rayr-page-div .rayr-page .input-go:focus {
+.rayr-page-container .rayr-page .input-go:focus {
   outline: none;
   border: 1px solid #5797FB;
 }
 
-.rayr-page-div .rayr-page .input-go:hover {
+.rayr-page-container .rayr-page .input-go:hover {
   background-color: #ffffff;
 }
 
-.rayr-page-div .rayr-page .input-go::placeholder {
-  color: #ccc;
+.rayr-page-container .rayr-page .input-go::placeholder {
+  color: #dbdbdb;
 }
 
-.rayr-page-div .rayr-page .li-go-width {
+.rayr-page-container .rayr-page .li-go-text {
   border: 0px;
   cursor: default;
 }
 
-.rayr-page-div .rayr-page .li-go-width:hover {
+.rayr-page-container .rayr-page .li-go-text:hover {
   background-color: #ffffff;
 }
 
-.rayr-page-div .rayr-page .li-page-width {
+.rayr-page-container .rayr-page .li-page-text {
   width: 30px;
   border: 0px;
   cursor: default;
   margin-left: 0;
 }
 
-.rayr-page-div .rayr-page .li-page-width:hover {
+.rayr-page-container .rayr-page .li-page-text:hover {
   background-color: #ffffff;
 }
 
-.rayr-page-div .rayr-page .value-blue {
+.rayr-page-container .rayr-page .value-blue {
   background-color: #5797FB;
   color: white;
   font-weight: 400;
 }
 
-.rayr-page-div .rayr-page .value-blue:hover {
+.rayr-page-container .rayr-page .value-blue:hover {
   opacity: 0.88;
   background-color: #5797FB;
 }
 
-.rayr-page-div .rayr-page .click-disable {
+.rayr-page-container .rayr-page .click-disable {
   cursor: not-allowed;
   background-color: #ededed;
   opacity: 0.5;
 }
 
-.rayr-page-div .lg-rayr-page li, .rayr-page-div .lg-rayr-page .input-go {
+.rayr-page-container .lg-rayr-page li, .rayr-page-container .lg-rayr-page .input-go {
   min-width: 34px;
   height: 34px;
   font-size: 14px;
 }
 
-.rayr-page-div .lg-rayr-page .input-go {
+.rayr-page-container .lg-rayr-page .input-go {
   height: 32px;
 }
 
-.rayr-page-div .sm-rayr-page li, .rayr-page-div .sm-rayr-page .input-go {
+.rayr-page-container .sm-rayr-page li, .rayr-page-container .sm-rayr-page .input-go {
   min-width: 24px;
   height: 24px;
   font-size: 12px;
 }
 
-.rayr-page-div .sm-rayr-page .input-go {
+.rayr-page-container .sm-rayr-page .input-go {
   height: 22px;
-}
-
-.div-test {
-  border: solid 1px #dbdbdb;
 }

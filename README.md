@@ -16,12 +16,14 @@
 | currentPage | Number | current page | 1 
 | perPage | Number | the counts that each page shows | 10
 | size | String | the size of the pagination(can receive one of 'lg','md','sm') | md
+| className | String | add custom styles for the pagination | 
 | onChange | Function | callback, the param is the page which you have clicked| 
 ### Use Demo
  ```javascript
  import {RayrPagination} from 'react-rayr-pagination';
 
-<RayrPagination count={this.state.count}
+<RayrPagination className={'yourClassName'} 
+    count={this.state.count}
     currentPage={this.state.currentPage}
     perPage={this.state.perPage}
     size={'sm'}

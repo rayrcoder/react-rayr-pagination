@@ -60,10 +60,11 @@ class List extends React.Component {
                         <p key={index}>{item}</p>
                     )
                 })}
-                <RayrPagination count={12638222}
+                <RayrPagination count={23232231}
                     currentPage={this.state.currentPage}
                     perPage={10}
                     size={'sm'}
+                    className={'class-test'}
                     showPages={this.state.showPages}
                     onChange={(page) => {
                         this.setState({currentPage:page});

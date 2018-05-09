@@ -26,6 +26,7 @@ class RayrPagination extends React.Component {
             currentPage: props.currentPage,
             perPage: props.perPage,
             size: props.size,
+            className:props.className,
             showPages: 5,
             arr: [],
             goPage: ''
@@ -69,10 +70,11 @@ class RayrPagination extends React.Component {
         }
     }
     toPage(item, page) {
+        console.log(2332);
         if (item === 0 || (item === 1 && page === 1) || item > Math.ceil(this.state.count / this.state.perPage) || (item === Math.ceil(this.state.count / this.state.perPage) && page === Math.ceil(this.state.count / this.state.perPage)) || item === this.state.currentPage) {
             return;
         }
-        this.setState({ currentPage: item }, () => {
+        this.setState({ currentPage: item, goPage: page === 'go-page' ? item: ''}, () => {
             this.changePage(item);
             this.props.onChange(item, page);
         });
@@ -88,7 +90,7 @@ class RayrPagination extends React.Component {
             return null;
         } else {
             return (
-                <div className="rayr-page-div">
+                <div className={`rayr-page-container ${this.state.className}`}>
                     <ul className={`rayr-page ${this.state.size+'-rayr-page'}`}>
                         <li className={`${page === 1 ? 'click-disable' : ''}`} onClick={() => { this.toPage(1, page) }}><span>{'‹‹'}</span></li>
                         <li className={`${page === 1 ? 'click-disable' : ''}`} onClick={() => { this.toPage(page - 1) }}><span>{'‹'}</span></li>
@@ -103,7 +105,7 @@ class RayrPagination extends React.Component {
                         <li className={`${page === lastpage ? 'click-disable' : ''}`} onClick={() => { this.toPage(lastpage, page) }}><span>{'››'}</span></li>
 
                         {
-                            lastpage > 5 && [<li className="li-go-width" key='go'><span>前往</span></li>,
+                            lastpage > 5 && [<li className="li-go-text" key='go'><span>前往</span></li>,
                             <input key='input' size={input_length + 1} min='1' max={'' + lastpage} maxLength={last_input_length} title="输入有误" className="input-go" value={this.state.goPage}
                                 placeholder={Math.ceil(this.state.count / this.state.perPage)}
                                 onChange={(e) => {
@@ -116,14 +118,14 @@ class RayrPagination extends React.Component {
                                 onKeyDown={(e) => {
                                     if (e.keyCode === 13) {
                                         if (this.state.goPage >= 1 && this.state.goPage <= lastpage && parseInt(this.state.goPage) !== page) {
-                                            this.toPage(this.state.goPage);
+                                            this.toPage(this.state.goPage,'go-page');
                                             e.target.blur();
                                         }
 
                                     }
                                 }}
                             />,
-                            <li key='page' className="li-page-width"><span>页</span></li>]
+                            <li key='page' className="li-page-text"><span>页</span></li>]
                         }
                     </ul>
                 </div>
