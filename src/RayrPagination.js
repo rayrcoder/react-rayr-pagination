@@ -70,7 +70,6 @@ class RayrPagination extends React.Component {
         }
     }
     toPage(item, page) {
-        console.log(2332);
         if (item === 0 || (item === 1 && page === 1) || item > Math.ceil(this.state.count / this.state.perPage) || (item === Math.ceil(this.state.count / this.state.perPage) && page === Math.ceil(this.state.count / this.state.perPage)) || item === this.state.currentPage) {
             return;
         }
