@@ -39,7 +39,7 @@ class RayrPagination extends React.Component {
     componentWillReceiveProps(props) {
         let cPage = parseInt(props.currentPage);
 
-        if (props.count != null && props.count != 0) {
+        if (props.count != null) {
             this.setState({ count: props.count, currentPage: parseInt(props.currentPage), perPage: props.perPage }, this.changePage(this.state.currentPage));
         }
 

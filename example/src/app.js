@@ -26,7 +26,7 @@ class List extends React.Component {
         setTimeout(() => {
             // console.log(this.props,544);
             this.setState({
-                count: 21
+                count: 150
             }, this.initList(1))
         }, 1000);
        
@@ -47,7 +47,7 @@ class List extends React.Component {
         
     }
     aaa(){
-        this.setState({count:21},()=>{
+        this.setState({count:0},()=>{
             console.log(this.state);
         })
     }
@@ -60,7 +60,7 @@ class List extends React.Component {
                         <p key={index}>{item}</p>
                     )
                 })}
-                <RayrPagination count={23232231}
+                <RayrPagination count={this.state.count}
                     currentPage={this.state.currentPage}
                     perPage={10}
                     size={'sm'}
